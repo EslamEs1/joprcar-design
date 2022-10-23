@@ -58,7 +58,7 @@ h1{
     font-family: font_bold;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6, button{
     font-family: font_bold;
 }
 
@@ -135,6 +135,9 @@ p,a, li,span,label,input,.card-title, textarea{
     font-family: font_bold;
 }
 
+.carousel-caption{
+    bottom:150px !important;
+}
 
 
 .navbar .nav-item a:hover{
@@ -669,7 +672,7 @@ p,a, li,span,label,input,.card-title, textarea{
 }
 
 .blog .info .text a{
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 10px;
     display: block;
     color:#333;
