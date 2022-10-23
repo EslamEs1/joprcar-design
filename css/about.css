@@ -1,0 +1,244 @@
+
+
+
+/* Start More Explanation */
+.explanation {
+    position: relative;
+    overflow: hidden;
+}
+
+.explanation img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+
+.explanation .text {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50%;
+    /* box-shadow: 2px 2px 15px #000; */
+    background-color: rgba(0, 0, 0, 0.726);
+    padding:10px;
+}
+
+.explanation .text h1 {
+    font-size: 35px;
+    font-family: font_bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.explanation .text h1 span {
+    color: var(--main-color);
+}
+
+.explanation .accordion-button {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    font-family: font_bold;
+    border-radius: none;
+    padding: 10px;
+
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+}
+
+.explanation .accordion-item {
+    border: none !important;
+
+    background-color: transparent;
+}
+
+.explanation .accordion-header {
+    margin-bottom: 30px;
+}
+
+.explanation .accordion-body {
+    color: #fff;
+    line-height: var(--line-height);
+}
+
+
+@media (max-width: 768px) {
+    .explanation .text {
+        width: 95%;
+    }
+
+    .explanation img {
+        height: 700px;
+
+    }
+
+}
+
+
+
+
+
+/* Add padding BETWEEN each column */
+.services{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.services .column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    
+}
+
+/* Clear floats after rows */
+.services .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.services .content {
+    background-color: white;
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+/* The "show" class is added to the filtered elements */
+.services .show {
+    display: block;
+}
+
+/* Style the buttons */
+.services .btn {
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #777;
+    margin:10px 0 ;
+}
+
+.services .btn:hover {
+    color: var(--main-color);
+}
+
+
+.services img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: var(--main-transition);
+
+}
+
+.services img:hover{
+    transform: scale(1.1);
+    
+}
+
+
+#myBtnContainer{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .services .column {
+        width: 100%;
+    }
+
+.services .btn {
+    font-size: 13px;
+}
+
+}
+
+
+
+
+
+
+ /* Start About us */
+ /* Start our_team */
+.our_team {
+    padding: 100px 0;
+}
+
+.our_team .title-main {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.our_team .title-main h1 {
+    color: var(--second-color);
+
+}
+
+.our_team .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+
+}
+
+.our_team .box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin: 50px 20px;
+    flex-direction: row;
+
+}
+
+.our_team .box img{
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+
+}
+
+
+.our_team .info {
+    display: block;
+    text-align: right;
+}
+
+
+
+.our_team .box h3 {
+    color: #444444;
+}
+
+.our_team .box span {
+    margin: 10px 0;
+    display: block;
+}
+
+
+@media (max-width: 991px) {
+    .our_team .container {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+
+}
+
+@media (max-width: 567px) {
+    .our_team img {
+        width: 100px;
+        height: 100px;
+    }
+    .our_team .box {
+        align-items: unset;
+    }
+
+}
